@@ -1,0 +1,17 @@
+.btn-enviar{
+	width: 100%;
+	background-color: seagreen;
+	padding: 4px;
+}
+.btn-enviar:hover{
+	background-color: lightgreen;
+	cursor: pointer;
+}
+
+input{
+	outline: none;
+	box-shadow: none;
+	border: 1px solid gray;
+	padding: 5px;
+	width: 100%;
+}

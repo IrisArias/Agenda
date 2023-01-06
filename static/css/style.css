@@ -1,0 +1,122 @@
+:root{
+	 /* Colores */
+    --color-primary: #3e8;
+    --color-secondary: hsl(0, 0%, 100%);
+    --color-text: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 41%);
+
+    /* Tipografías */
+    --text: 'Alata', sans-serif;
+    --titles: 'Josefin Sans', sans-bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+	display: flex;
+	width: 100vw;
+	height: 80px;
+	background-color: var(--color-primary);
+}
+nav ul{
+	list-style-type: none;
+	display: flex;
+	text-align: center;
+	width: 90%;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+}
+nav ul li a:hover{
+	color: var(--color-text);
+}
+main{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	margin: 50px;
+	justify-content: flex-start;
+	align-items: center;	
+}
+.list{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	border: 1px solid var(--color-text);
+	width: 50%;
+	color: var(--color-text);
+}
+.list li{
+	padding: 10px;
+	width: 100%;
+	border-bottom: 1px solid var(--color-text);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn{
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+}
+.btn-ver{
+	background-color: var(--color-primary);
+
+}
+.btn-edit{
+	background-color: greenyellow;
+}
+.btn-delete{
+	background-color: indianred;
+}
+.search{
+	margin: 20px;
+}
+.search-bar{
+	padding: 7px;
+}
+.search-btn{
+	background-color: var(--color-primary);
+	padding: 5px;
+	cursor: pointer;
+}
+.search-btn:hover{
+	background-color: var(--color-secondary);
+}
+.aux-btns a{
+	padding: 10px;
+	text-decoration: none;
+}
+.alert-success{
+	padding: 10px;
+	text-decoration: none;
+	background-color: lightgreen;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-between;
+}
+.card{
+	width: 300px;
+	height: 250px;
+	border.border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin: 10px;
+	background-color: lightgreen;
+	box-shadow: lightgreen;
+}
+.card a{
+	text-decoration: none;
+}

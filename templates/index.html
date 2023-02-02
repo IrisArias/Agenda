@@ -3,7 +3,12 @@
 {% block 'title' %} Inicio {% endblock %}
 
 {% block 'content' %}
-<h1>Bienvenido a tu Gestor personal</h1>
+<div class="welcome">
+	<h1>Hola Usuario!</h1>
+	<h2>Bienvenido a tu Gestor personal</h2>
+</div>
+
+
 <div class="cards">
 	<div class="card">
 		<a href="{% url 'contact' %}">CONTACTOS</a>

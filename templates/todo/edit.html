@@ -17,7 +17,7 @@
 </ul>
 {% endif %}
 
-<span class="aux-btns"><a href="{% url 'todo' %}">Volver atras</a></span>
+<span class="aux-btns"><a href="{% url 'todo' %}">Volver Atras</a></span>
 
 <form action="{% url 'todo_edit' id=id %}" method="POST">
 	{% csrf_token %}

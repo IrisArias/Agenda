@@ -11,11 +11,15 @@
 	{% block 'styles' %}{% endblock %}
 </head>
 <body>
+	<div class="contenedor">
+		
+	
 	{% include 'layout/partials/menu.html' %}
 
 	<main>
 		{% block 'content' %}{% endblock %}
 	</main>
+	</div>
 	{% block 'scripts' %}{% endblock %}
 </body>
 </html>

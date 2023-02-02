@@ -1,5 +1,4 @@
 .btn-enviar{
-	width: 100%;
 	background-color: seagreen;
 	padding: 4px;
 }
@@ -14,4 +13,6 @@ input{
 	border: 1px solid gray;
 	padding: 5px;
 	width: 100%;
+	  	line-height: 2.5;
+
 }

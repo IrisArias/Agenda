@@ -18,17 +18,19 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+.contenedor{
+	display: flex;
+}
 nav{
 	display: flex;
-	justify-content: center;
-	width: 100vw;
-	padding: 2rem;
+	padding: 20px;
+  	line-height: 2.5;
+	width: 15%;
+	height: 100vh;
 	background-color: var(--color-primary);
 }
 nav ul{
 	list-style-type: none;
-	display: flex;
 }
 nav ul li a{
 	text-decoration: none;
@@ -42,11 +44,19 @@ nav ul li a:hover{
 main{
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	width: 80%;
 	margin: 50px;
 	justify-content: flex-start;
-	align-items: center;	
 }
+.welcome{
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
 .list{
 	display: flex;
 	flex-direction: column;
@@ -65,6 +75,7 @@ main{
 }
 .btn{
 	padding: 5px 10px;
+	border-radius: 3px;	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
 }
@@ -73,7 +84,7 @@ main{
 
 }
 .btn-edit{
-	background-color: greenyellow;
+	background-color: #87A2FF;
 }
 .btn-delete{
 	background-color: indianred;
@@ -86,7 +97,7 @@ main{
 }
 .search-btn{
 	background-color: var(--color-blue);
-	padding: 5px 7px;
+	padding:  7px;
 	border: solid 1px transparent;
     border-radius: 3px;	cursor: pointer;
 	transition: all 0.4s ease;
@@ -98,29 +109,39 @@ main{
 .aux-btns a{
 	padding: 10px;
 	text-decoration: none;
+	line-height: 2.5;
 }
 .alert-success{
 	padding: 10px;
 	text-decoration: none;
+	list-style: none;
 	background-color: lightgreen;
 }
 
 .cards{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 .card{
-	width: 300px;
+	border-radius: 10px;	
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	width: 100%;
 	height: 250px;
-	border.border-radius: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
-	background-color: var(--color-primary);
+	background-color: var(--color-blue);
+
 }
 .card a{
 	text-decoration: none;
-		color: white;
-
+	color: black;
+}
+.card:hover{
+	color: white;
+	transform: translateY(-2px);
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	background-color: var(--color-primary);
 }
